@@ -1,0 +1,202 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Add this in _Layout.cshtml inside <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Priyanka Yadav</a>
+        <div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="about" class="text-center py-5" style="margin-top: 80px;">
+    <div class="container">
+        <!-- Profile Image -->
+        <img src="/profile.jpg" alt="Priyanka Yadav" class="rounded-circle mb-3"
+             style="width: 150px; height: 150px; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+
+        <h1 class="display-4">Hi, I'm Priyanka 👋</h1>
+        <p class="lead">.NET Software Developer | Azure Enthusiast | Problem Solver</p>
+        <a href="/PriyankaYadav_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+    </div>
+</section>
+
+
+
+<!-- Projects -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-4">Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">CP Gyan</h5>
+                        <p class="card-text">Mobile-based dairy management system for milk collection centers (MCC), supporting farmer registration, milk tracking, asset & inventory control, and workflow automation.</p>
+                        <a href="https://github.com/priyankanyadav/CP" target="_blank" class="btn btn-outline-primary btn-sm">View Project</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">CFL Dairy System</h5>
+                        <p class="card-text">Real-time dairy management with Redis caching and MySQL DB,An ASP.NET Core-based scalable platform for dairy supply chain management. The system supports real-time milk data recording, digital passbooks for farmers, complaint tracking via mobile apps, and asset inventory control — all powered by a microservices architecture on Docker & Azure Kubernetes Service (AKS).</p>
+                        <a href="https://github.com/priyankanyadav/CFL-Creamy-Foods-Ltd-" target="_blank" class="btn btn-outline-primary btn-sm">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Octave Holding & Investment</h5>
+                        <p class="card-text">Developed a scalable Building Management System for 100+ residential and commercial properties using ASP.NET Core and Entity Framework Core. The platform supports automated maintenance scheduling, tenant tracking, and real-time asset monitoring for over 1,000 building assets. Integrated SQL Server and MongoDB for hybrid data storage, optimized system performance with caching and query tuning, and implemented secure role-based access control for 200+ user roles. Enabled seamless XML-based data exchange and improved response times by 30% while handling millions of monthly transactions.</p>
+                        <a href="https://octavehi.com/portfolio/" target="_blank" class="btn btn-outline-primary btn-sm">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skills Section -->
+<section style="background-color: #f3f4f6; padding: 3rem 0;" id="skills">
+    <h2 style="text-align: center; color:black; font-size: 2rem; font-weight: bold; margin-bottom: 2rem;">
+        Technical Skills
+    </h2>
+    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: nowrap; overflow-x: auto; max-width: 100%; margin: 0 auto; padding: 0 1rem;">
+
+        <!-- Languages -->
+        <div style="background: white; flex: 0 0 auto; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); min-width: 250px;">
+            <h3 style="color: black; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">
+                💻 Languages
+            </h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">C#</span>
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">JavaScript</span>
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">Core Java</span>
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">SQL</span>
+            </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div style="background: white; flex: 0 0 auto; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); min-width: 250px;">
+            <h3 style="color: black; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">
+                🧩 Frameworks
+            </h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">.NET Core</span>
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">ASP.NET MVC</span>
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">React</span>
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">Angular</span>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div style="background: white; flex: 0 0 auto; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); min-width: 250px;">
+            <h3 style="color: black; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">
+                🛠️ Tools
+            </h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">Visual Studio</span>
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">Git</span>
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">Azure DevOps</span>
+                <span style="background: #e5e7eb; padding: 0.3rem 0.75rem; border-radius: 9999px;">Docker</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="py-5">
+    <div class="container">
+        <h2 class="mb-4">Experience</h2>
+        <ul>
+            <li><strong>YAMA Technologies</strong> - Software Developer (Oct 2022 – Feb 2024)</li>
+            <li><strong>Logimonk Pvt. Ltd.</strong> - ASP.NET Developer (Jan 2022 – Aug 2022)</li>
+            <li><strong>Teleperformance</strong> - Customer Care Professional (May 2021 – Dec 2021)</li>
+        </ul>
+    </div>
+</section>
+<footer style="background-color: #1c2d3f; color: white; padding: 40px 20px;">
+    <div style="max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+        <!-- Contact Info -->
+        <div>
+            <h2 style="text-align: center; color:#00bfff; font-size: 2rem; font-weight: 600; margin-bottom: 1rem;">
+            Contact Me
+            </h2>
+           @*  <h3 style="color: #00bfff;">Get in Touch</h3> *@
+            <p>📧 PriyankaNYadav1144@gmail.com</p>
+            <p>📍 Mississauga, Ontario Canada</p>
+            <p>📞 +12263372785</p>
+        </div>
+
+        <!-- Social Links -->
+        <div>
+            <h3 style="color: #00bfff;">Follow Me</h3>
+            <p>@* <a href="#" style="color: white; text-decoration: none;">LinkedIn</a> *@
+            <a href="https://www.linkedin.com/in/priyankanyadav/" target="_blank">LinkedIn</a></p>
+            
+            <p>@* <a href="#" style="color: white; text-decoration: none;">GitHub</a> *@
+                <a href="https://github.com/priyankanyadav" target="_blank">GitHub</a>
+            </p>
+            
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <h3 style="color: #00bfff;">Quick Links</h3>
+            <p><a href="#" style="color: white; text-decoration: none;">Send Invitation</a></p>
+            <p><a href="#" style="color: white; text-decoration: none;">Generate Email Template</a></p>
+            <p><a href="#" style="color: white; text-decoration: none;">Download My Resume</a></p>
+            <p><a href="#" style="color: white; text-decoration: none;">Refer Your Friends</a></p>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; color: #ccc;">
+        © 2025 Priyanka Yadav. All Rights Reserved.
+    </div>
+</footer>
+
+<!-- Contact 
+<section id="contact" class="py-5 bg-light text-center">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:PriyankaNYadav1144@gmail.com">PriyankaNYadav1144@gmail.com</a></p>
+        <p>Location: Mississauga, ON</p>
+        <p>
+            <a href="https://github.com/priyankanyadav" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/priyankanyadav/" target="_blank">LinkedIn</a>
+        </p>
+    </div>
+</section>-->
+<!-- About -->
+
+
+<!-- Smooth Scroll Script -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>

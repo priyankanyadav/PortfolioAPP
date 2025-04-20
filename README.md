@@ -4,8 +4,8 @@ Welcome to my personal developer portfolio! This site showcases my technical ski
 
 ## 🔗 Live Demo
 
-🌐 [View Portfolio](https://your-portfolio-link.com)  
-> *(Replace this with your actual deployed link)*
+
+
 
 ---
 
